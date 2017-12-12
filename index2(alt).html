@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Boys & Girls Club Of Montrouis Haiti (Design 02)</title>
+		<style type="text/css">
+		  * {
+		  	box-sizing: border-box;
+		  	-webkit-box-sizing: border-box;
+		  	-moz-box-sizing: border-box;
+		  }
+
+		  html, body {
+		  	height: 100%;
+		  }
+
+		  body {
+		  	padding: 0;
+		  	margin: 0;
+		  	font-family: sans-serif;
+		  }
+
+		  section {
+		  	float: left;
+		  	height: 100%;
+		  }
+
+		  img {
+		  	display: inline-block;
+		  	background-color: white;
+		  	width: 250px;
+		  	height: 250px;
+		  }
+
+		  #left-nav {
+		  	position: fixed;
+		  	z-index: 2;
+		  	width: 250px;
+		  	background: rgba(0, 130, 191, 0.5);
+
+		  }
+
+		  ul {
+		  	list-style-type: none;
+		  	padding: 0;
+		  }
+
+		  ul li {
+		  	padding: 2em;
+		  	width: 100%;
+		  	height: 45px;
+		  }
+
+		  li a {
+		  	font-size: 18px;
+		  	color: white;
+		  	width: 100%;
+		  	display: block;
+		  	text-decoration: none;
+		  }
+
+		  .container {
+		  	text-align: center;
+		  	padding: 3em;
+		  }
+
+		  .social-link {
+		  	color: white;
+		  	border: 3px solid white;
+		  	padding: 6px 10px;
+		  	border-radius: 5px;
+		  	text-decoration: none;
+		  }
+
+		  #content {
+		  	width: 100%;
+		  	position: relative;
+		  	z-index: 0;
+		  }
+
+		  .hero {
+		  	height: 100%;
+		  	background: url("https://kingmancircle.com/wp-content/uploads/2016/03/Boys-and-Girls-Club-of-Kingman-938x535.jpg");
+		  	background-size: cover;
+		  	background-repeat: no-repeat;
+		  }
+
+		  .page {
+		  	padding: 3em 18em;
+		  	height: 100%;
+		  	width: 100%;
+		  	position: absolute;
+		  	top: 0;
+		  	opacity: 0;
+		  }
+
+		  .page h2 {
+		  	font-size: 48px;
+		  	color: #0082BF;
+		  }
+
+		  .page p {
+		  	font-size: 21px;
+		  	line-height: 1.5;
+		  }
+
+		  .alt {
+		  	background: #0082BF;
+		  	color: white;
+		  }
+
+		  .alt h2 {
+		  	color: white;
+		  }
+
+		  .active {
+		  	opacity: 1;
+		  }
+
+		</style>
+	</head>
+	<body>
+		<section id="left-nav">
+			<img src="" alt=""/>
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#board">Board Members</a></li>
+					<li><a href="#partners">Partnerships</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="index2.html">Alt</a></li>
+				</ul>
+			</nav>
+			<div class="container"><a class="social-link" href="#">f</a> <a class="social-link" href="#">t</a> <a class="social-link" href="#">e</a></div>
+		</section>
+
+		<section id="content">
+			<div id="home" class="hero page active"></div>
+
+			<div id="about" class="page">
+				<h2>Mission</h2>
+				<p>Committed to the premise that children around the globe deserve a good start and a solid foundation to flourish and succeed. Providing training and opportunites they would never have access to and a safe place where they can learn and grow to their full potential. We will strive to give all youth all the resources within our power through education, programs and support so they can successfully grow into responsible, model citizens.</p>
+			</div>
+
+			<div id="board" class="page alt">
+				<h2>Board Members</h2>
+				<p><strong>President</strong> Regina D. Ledsinger</p>
+				<p><strong>Secretary</strong> Susan Santos</p>
+				<p><strong>Treasurer</strong> Mary Wright</p>
+				<p><strong>General Board Member</strong> Alvin James Freeman Jr.</p>
+				<p><strong>General Board Member</strong> Tekara L. Ray-Carnegie</p>
+				<p><strong>Executive Director</strong> Innocent Desir</p>
+				<p><strong>Special Events Coordinator</strong> Bazelais Vaval</p>
+			</div>
+
+			<div id="partners" class="page">
+				<h2>Partnership</h2>
+				<p>We are proud to be partnering with The Boys &amp; Girls Clubs of America, who have been influencing and changing young people's lives for more than a century. We are certain with their support and training we will be able to move mountains in many children's lives in Haiti.</p>
+			</div>
+
+			<div id="contact" class="page alt">
+				<h2>Contact</h2>
+				<h3>Address</h3>
+					<p><address>123 Main St <br> Anywhere, USA 45644</address></p>
+
+					<h3>Phone</h3>
+					<p>(123) 456 - 7890</p>
+
+					<h3>Email</h3>
+					<p>info@bgc.m.haiti.org</p>
+			</div>
+		</section>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript">
+		  $(function() {
+		  	console.log( "ready!" );
+
+		  	$("a").click(function() {
+		  		$('.page').removeClass('active').fadeOut();
+		  		var page = $(this).attr('href');
+		  		$(page).addClass('active').fadeIn();
+		  	});
+		  });
+		</script>
+	</body>
+</html>
