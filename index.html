@@ -306,6 +306,21 @@
 		$(window).scroll(function(){
 			$(".hero").css("opacity", 1 - $(window).scrollTop() / 500);
 		});
+			
+		// Show donate modal
+		$("#donate").click(hideModal(false));
+			
+		function hideModal(hiddden) {
+		  if(hidden == true) {
+		    $("#donateModal").hide();
+		  } else {
+		    $("#donateModal").show();
+		  }
+		}
+		
+		$(".close").click(hideModal(true));
+		$(window).click(hideModal(true));
+			
 		</script>
 	</body>
 </html>
