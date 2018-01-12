@@ -134,14 +134,14 @@
 		  }
 
 		  .third-strip {
-		  	background: url('third.png');
+		  	background: url('haiti_boys.png');
 		  	background-size: cover;
 		  	background-repeat: no-repeat;
 		  	background-attachment: fixed;
 		  }
 			
 			#donate {
-		  	position: fixed;
+			position: fixed;
 		  	text-align: center;
 		  	padding: 15px;
 		  	right: 5px;
@@ -308,19 +308,13 @@
 		});
 			
 		// Show donate modal
-		$("#donate").click(hideModal(false));
-			
-		function hideModal(hidden) {
-		  if(hidden == true) {
-		    $("#donateModal").hide();
-		  } else {
-		    $("#donateModal").show();
-		  }
-		}
-		
-		$(".close").click(hideModal(true));
-		$(window).click(hideModal(true));
-			
+		$("#donate").click(function() {
+			$("#donateModal").show();
+		});
+
+		$(".close").click(function() {
+			$("#donateModal").hide();
+		});
 		</script>
 	</body>
 </html>
