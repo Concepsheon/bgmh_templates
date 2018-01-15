@@ -140,7 +140,7 @@
 		  	background-attachment: fixed;
 		  }
 			
-			#donate {
+			#donate-btn {
 			position: fixed;
 		  	text-align: center;
 		  	padding: 15px;
@@ -156,14 +156,14 @@
 		  	z-index: 3;
 		  }
 
-		  #donate a {
+		  #donate-btn a {
 		  	width: 100%;
 		  	display: block;
 		  	color: white;
 		  	text-transform: uppercase;
 		  }
 
-		  #donateModal {
+		  #donate {
 		  	display: none;
 		  	position: fixed;
 		  	z-index: 3;
@@ -226,13 +226,13 @@
 		</div>
 		
 		<!-- donate modal -->
-		<div id="donate"><a href="#donateModal">Donate</a></div>
+		<div id="donate-btn"><a href="#donate">Donate</a></div>
 		
-		<div id="donateModal">
+		<div id="donate">
 			<div class="modal-content">
 				<span class="close">&times;</span>
 				<h2>Feeding Minds...Feeding Hearts...Feeding Hope...Feeding Hunger</h2>
-				<h3>Boys &amp; Girls Club of Montrouis Haiti</h3>
+				<p><img src="menu_logo.png" alt="Boys &amp; Girls Club of Montrouis, Haiti logo" /></p>
 
 				<h4>Mailing Address for Donations and Correspondence</h4>
 
@@ -307,12 +307,12 @@
 		});
 			
 		// Show donate modal
-		$("#donate").click(function() {
-			$("#donateModal").show();
+		$("#donate-btn").click(function() {
+			$("#donate").show();
 		});
 
 		$(".close").click(function() {
-			$("#donateModal").hide();
+			$("#donate").hide();
 		});
 		</script>
 	</body>
